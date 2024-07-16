@@ -51,28 +51,37 @@ Step 4: IOMMU remapping
   Save file and exit the text editor  
    
 Step 5: Blacklist the GPU drivers  
-  Execute: nano /etc/modprobe.d/blacklist.conf 
-     Add these lines: 
+  Execute: 
+```bash
+nano /etc/modprobe.d/blacklist.conf
+```
+  Add these lines: 
+```bash
 blacklist radeon
 blacklist nouveau
 blacklist nvidia
 blacklist nvidiafb
 Kvmgt
+```
 
 Pour IGPU  ajouter dans le balcklist 👇
-
+```bash
 blacklist snd_hda_codec_hdmi
 blacklist snd_hda_intel
 blacklist snd_hda_codec
 blacklist snd_hda_core
 blacklist radeon
 blacklist amdgpu
+```
 
   Save file and exit the text editor  
    
-Step 6: Adding GPU to VFIO  
- a) Execute: lspci -v 
-     Look for your GPU and take note of the first set of numbers 
+##Step 6: Adding GPU to VFIO  
+ a) Execute: 
+ ```bash
+ lspci -v 
+```
+    Look for your GPU and take note of the first set of numbers 
  b) Execute: lspci -n -s (PCI card address) 
    This command gives you the GPU vendors number.
  c) Execute: nano /etc/modprobe.d/vfio.conf 
