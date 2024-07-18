@@ -1,5 +1,8 @@
 # Passthrough GPU/iGPU 
 
+```bash
+https://nextcloud.rosely.re/s/TcGbZ8oTrdfjo6i
+```
 ## Installation
 
 url
