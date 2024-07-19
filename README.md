@@ -2,12 +2,6 @@
 
 ## Installation
 
-url
-
-```bash
- https://docs.google.com/forms/d/e/1FAIpQLSej3F9ncMQBoutqAhvnnHRA0oMwfhlqRAs2urbmpgDVSQhS6A/viewform?usp=sf_link
-```
-
 ## Step 1: Edit GRUB  
   Execute: nano /etc/default/grub 
      Change this line from 
