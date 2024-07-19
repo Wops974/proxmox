@@ -20,8 +20,11 @@ GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on iommu=pt pcie_acs_override=down
   Save file and exit the text editor  
    
 ## Step 2: Update GRUB  
-  Execute the command: update-grub 
-   
+  Execute the command: 
+```bash
+update-grub 
+```
+
 ## Step 3: Edit the module files   
   Execute:  
 ```bash
