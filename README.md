@@ -105,7 +105,7 @@ nano /etc/modprobe.d/vfio.conf
 ```
    Add this line with your GPU number and Audio number: 
 ```bash
-   options vfio-pci ids=(GPU number,Audio number) disable_vga=1
+options vfio-pci ids=(GPU number,Audio number) disable_vga=1
 ```
   
   Save file and exit the text editor  
