@@ -8,10 +8,10 @@
 nano /etc/default/grub
 ```
   Change this line from 
-   GRUB_CMDLINE_LINUX_DEFAULT="quiet"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet"
      to 
  ```bash
-   GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on iommu=pt pcie_acs_override=downstream,multifunction nofb nomodeset video=vesafb:off,efifb:off"
+ GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on iommu=pt pcie_acs_override=downstream,multifunction nofb nomodeset video=vesafb:off,efifb:off"
  ```
 si defaut avec les autre equipement cette commande fonctionne
 ```bash
@@ -33,10 +33,10 @@ nano /etc/modules
 
    Add these lines: 
 ```bash
-   vfio
-   vfio_iommu_type1
-   vfio_pci
-   vfio_virqfd
+vfio
+vfio_iommu_type1
+vfio_pci
+vfio_virqfd
 ```
   Save file and exit the text editor  
    
