@@ -3,8 +3,11 @@
 ## Installation
 
 ## Step 1: Edit GRUB  
-  Execute: nano /etc/default/grub 
-     Change this line from 
+  Execute: 
+```bash
+nano /etc/default/grub
+```
+  Change this line from 
    GRUB_CMDLINE_LINUX_DEFAULT="quiet"
      to 
  ```bash
