@@ -71,7 +71,7 @@ blacklist radeon
 blacklist nouveau
 blacklist nvidia
 blacklist nvidiafb
-Kvmgt
+blacklist Kvmgt
 ```
 
 Pour IGPU  ajouter dans le balcklist 👇
