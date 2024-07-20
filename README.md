@@ -49,7 +49,8 @@ nano /etc/modprobe.d/iommu_unsafe_interrupts.conf
 ```bash
 options vfio_iommu_type1 allow_unsafe_interrupts=1
 ```
-     Save file and exit the text editor  
+  Save file and exit the text editor  
+ 
  b) Execute: 
 ```bash
 nano /etc/modprobe.d/kvm.conf 
@@ -81,7 +82,7 @@ blacklist snd_hda_codec
 blacklist snd_hda_core
 blacklist radeon
 blacklist amdgpu
-blacklist Kvmgt
+#blacklist Kvmgt
 ```
 
   Save file and exit the text editor  
@@ -91,7 +92,7 @@ blacklist Kvmgt
 ```bash
  lspci -v 
 ```
-    Look for your GPU and take note of the first set of numbers 
+   Look for your GPU and take note of the first set of numbers 
 
  b) Execute: 
 ```bash
