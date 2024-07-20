@@ -71,7 +71,6 @@ blacklist radeon
 blacklist nouveau
 blacklist nvidia
 blacklist nvidiafb
-blacklist Kvmgt
 ```
 
 Pour IGPU  ajouter dans le balcklist 👇
@@ -82,6 +81,7 @@ blacklist snd_hda_codec
 blacklist snd_hda_core
 blacklist radeon
 blacklist amdgpu
+blacklist Kvmgt
 ```
 
   Save file and exit the text editor  
