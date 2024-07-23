@@ -80,7 +80,6 @@ blacklist snd_hda_codec_hdmi
 blacklist snd_hda_intel
 blacklist snd_hda_codec
 blacklist snd_hda_core
-blacklist radeon
 blacklist amdgpu
 #blacklist Kvmgt
 ```
