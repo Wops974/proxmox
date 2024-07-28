@@ -116,3 +116,39 @@ options vfio-pci ids=(GPU number,Audio number) disable_vga=1
 update-initramfs -u 
 ```
  b) Then restart the your Proxmox Node
+
+
+
+
+Pour du Debian réparation du grub 
+
+Boot sur l'iso ubuntu "essayer" puis lancer le terminal
+
+Puis 
+```
+sudo add-apt-repository ppa:yannubuntu/boot-repair
+sudo apt update && sudo apt install -y boot-repair
+```
+
+Ensuite 
+```
+boot-repair
+```
+
+ATTENTION la nouvelle interface reseaux n'a plus de DHCP actif 
+
+Pour debian
+```
+nano /etc/network/interfaces
+```
+
+Pour ubuntu 
+```
+nano /etc/netplan/*.yaml
+```
+```
+sudo reboot
+```
+
+
+
