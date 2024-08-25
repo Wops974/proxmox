@@ -117,10 +117,9 @@ update-initramfs -u
 ```
  b) Then restart the your Proxmox Node
 
-
-
-
-Pour du Debian réparation du grub 
+# FIN
+Bonus 
+## Pour du Debian réparation du grub 
 
 Boot sur l'iso ubuntu "essayer" puis lancer le terminal
 
@@ -135,7 +134,7 @@ Ensuite
 boot-repair
 ```
 
-ATTENTION la nouvelle interface reseaux n'a plus de DHCP actif 
+#Reseaux n'a pas de DHCP actif 
 
 Pour debian
 ```
