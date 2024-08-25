@@ -118,7 +118,8 @@ update-initramfs -u
  b) Then restart the your Proxmox Node
 
 # FIN
-Bonus 
+
+#Bonus 
 ## Pour du Debian réparation du grub 
 
 Boot sur l'iso ubuntu "essayer" puis lancer le terminal
