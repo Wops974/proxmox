@@ -1,3 +1,9 @@
+# Qemu-guest-agent install
+
+```bash
+sudo apt update && sudo apt install qemu-guest-agent -y && sudo systemctl enable qemu-guest-agent && sudo systemctl start qemu-guest-agent
+```
+
 # Passthrough GPU/iGPU 
 
 ## Installation
