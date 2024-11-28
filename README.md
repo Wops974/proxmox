@@ -104,7 +104,12 @@ blacklist amdgpu
 lspci -n -s (PCI card address)
 ``` 
    This command gives you the GPU vendors number.
- 
+Or 
+Execute: 
+```bash
+ lspci -nnk | grep -A 3 -i vga![image](https://github.com/user-attachments/assets/3d0c239c-a3fd-491e-bbd1-219efcd88eb9)
+```
+
  c) Execute: 
 ```bash
 nano /etc/modprobe.d/vfio.conf 
