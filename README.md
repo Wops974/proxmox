@@ -86,6 +86,7 @@ blacklist snd_hda_intel
 blacklist snd_hda_codec
 blacklist snd_hda_core
 blacklist amdgpu
+#blacklist i915
 #blacklist Kvmgt
 ```
 
