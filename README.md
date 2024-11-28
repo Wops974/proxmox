@@ -9,15 +9,15 @@ nano /etc/default/grub
 ```
   Change this line from 
 GRUB_CMDLINE_LINUX_DEFAULT="quiet"
-     to 
+     to this 
  ```bash
  GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on iommu=pt pcie_acs_override=downstream,multifunction nofb nomodeset video=vesafb:off,efifb:off"
  ```
-iGPU & CPU 
+or this iGPU & CPU 
 ```bash
 GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on i915.enable_gvt=1 iommu=pt pcie_acs_override=downstream,multifunction video=efifb:off video=vesa:off vfio_iommu_type1.allow_unsafe_interrupts=1 kvm.ignore_msrs=1 modprobe.blacklist=radeon,nouveau,nvidia,nvidiafb,nvidia-gpu"
  ```
-nvidia ok
+or this nvidia ok
 si defaut avec les autre equipement cette commande fonctionne
 ```bash
 GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on iommu=pt pcie_acs_override=downstream,multifunction"
