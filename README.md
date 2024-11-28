@@ -1,9 +1,3 @@
-# Qemu-guest-agent install
-
-```bash
-sudo apt update && sudo apt install qemu-guest-agent -y && sudo systemctl enable qemu-guest-agent && sudo systemctl start qemu-guest-agent
-```
-
 # Passthrough GPU/iGPU 
 
 ## Installation
@@ -131,6 +125,14 @@ update-initramfs -u
 # FIN
 
 #Bonus 
+
+## Qemu-guest-agent install
+
+```bash
+sudo apt update && sudo apt install qemu-guest-agent -y && sudo systemctl enable qemu-guest-agent && sudo systemctl start qemu-guest-agent
+```
+
+
 ## Pour du Debian réparation du grub 
 
 Boot sur l'iso ubuntu "essayer" puis lancer le terminal
