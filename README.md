@@ -149,7 +149,7 @@ Ensuite
 boot-repair
 ```
 
-#Reseaux n'a pas de DHCP actif 
+# Reseaux n'a pas de DHCP actif 
 
 Pour debian
 ```
