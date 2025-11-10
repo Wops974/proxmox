@@ -170,5 +170,9 @@ nano /etc/netplan/*.yaml
 sudo reboot
 ```
 
+# Full Espace disk local LVM 
 
+```
+lvremove /dev/pve/data && lvresize -l +100%FREE /dev/pve/root && resize2fs /dev/mapper/pve-root
+```
 
